@@ -7,11 +7,10 @@
 }
 .container{
     width: 90%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 /* GENERAL STYLE */
-
 /* -------------------HEADER STYLE START------------------- */
 .header{
     height: 100vh;
@@ -253,3 +252,57 @@
     background-color: hsl(356, 100%, 66%);
 }
 /* -------------------HEADER STYLE END------------------- */
+
+/* -------------------DESIGN STYLE START------------------- */
+.design .container{
+    padding: 50px 0 80px;
+    display: flex;
+    align-items: center;
+}
+.design h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: hsl(208, 49%, 24%);
+    padding-top: 80px;
+}
+.design-content , .design-image{
+    width: 50%;
+}
+.design-content h3{
+    font-size: 1.8rem;
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 30px;
+}
+.design-content p{
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 70px;
+    color: hsl(240, 2%, 79%);
+    padding-right: 100px;
+}
+.design-image img{
+    width: 100%;
+}
+@media only screen and (max-width: 768px){
+    .design .container{
+        flex-direction: column-reverse;
+    }
+    .design-content , .design-image{
+        width: 100%;
+    }
+    .design-image{
+        background-image: url(../images/illustration-editor-mobile.svg);
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+    .design-image img{
+        display: none;
+    }
+    .design-content h3 , .design-content p{
+        text-align: center;
+        padding-right: 0;
+    }
+}
+/* -------------------DESIGN STYLE END------------------- */

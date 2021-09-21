@@ -21,7 +21,7 @@ hamburger.addEventListener('click', function(){
 
 // FIXED NAVBAR
 const navbar = document.querySelector('.header-navbar');
-const header = document.querySelector('.header-content');
+const header = document.querySelector('.header-content ');
 
 const headerObserver = new IntersectionObserver(function(entries,headerObserver){
     entries.forEach(entry => {
