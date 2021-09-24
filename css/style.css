@@ -395,3 +395,69 @@
     }
 }
 /* STATE STYLE END */
+
+/* -------------------DESIGN STYLE START------------------- */
+.free{
+    margin-top: 100px;
+}
+.free .container{
+    padding: 50px 0 80px;
+    display: flex;
+    align-items: center;
+}
+.design h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: hsl(208, 49%, 24%);
+    padding-top: 80px;
+}
+.free-content , .free-image{
+    width: 50%;
+}
+.free-content{
+    padding-left: 50px;
+}
+.free-content h3{
+    font-size: 1.8rem;
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 30px;
+}
+.free-content p{
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 70px;
+    color: hsl(240, 2%, 79%);
+   
+}
+.free-image img{
+    width: 100%;
+}
+@media only screen and (max-width: 768px){
+    .free{
+        margin-top: 0;
+    }
+    .free .container{
+        flex-direction: column-reverse;
+    }
+    .free-content , .free-image{
+        width: 100%;
+    }
+    .free-content{
+        padding: 0 30px;
+    }
+    .free-image{
+        background-image: url(../images/illustration-laptop-mobile.svg);
+        background-size: cover;
+        background-position: center center;
+        height: 350px;
+        margin-bottom: 50px;
+    }
+    .free-image img{
+        display: none;
+    }
+    .free-content h3 , .free-content p{
+        text-align: center;
+        padding-right: 0;
+    }
+}
+/* -------------------DESIGN STYLE END------------------- */
